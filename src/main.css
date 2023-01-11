@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: hsl(206, 94%, 87%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    background-color: white;
+    width: 60vw;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+}
+
+.active-steps{
+    width: 274px;
+    height: 568px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./images/bg-sidebar-desktop.svg);
+    background-size: cover;
+}
+
+.form-content{
+    /* border: 2px solid black; */
+    width: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.form-title{
+    color: hsl(213, 96%, 18%);
+}
+
+.form-description{
+    color: hsl(231, 11%, 63%);
+}
+
+.page-button{
+    float: right;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    align-self: flex-end;
+}
+
+.page-button:hover{
+    background-color: hsl(243, 100%, 62%);
+}

@@ -1,0 +1,23 @@
+.plan-container{
+    display: flex;
+}
+
+.plan{
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    height: 170px;
+}
+
+.plan:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.plan-one{
+    margin-right: 20px;
+}
+
+.plan-three{
+    margin-left: 20px;
+}

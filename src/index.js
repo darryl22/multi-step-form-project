@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from 'react-dom/client'
+import "./main.css"
+import Step from "./Step"
+import StepOne from "./StepOne"
+import StepTwo from "./StepTwo"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Page() {
+    return(
+        <div className="main-container">
+            <div className="active-steps">
+                <Step
+                    number = {1}
+                    step = "STEP 1"
+                    title = "YOUR INFO"
+                />
+                <Step
+                    number = {2}
+                    step = "STEP 2"
+                    title = "SELECT PLAN"
+                />
+                <Step
+                    number = {3}
+                    step = "STEP 3"
+                    title = "ADD-ONS"
+                />
+                <Step
+                    number = {4}
+                    step = "STEP 4"
+                    title = "SUMMARY"
+                />
+            </div>
+            <div className="form-content">
+                <div>
+                    <h1 className="form-title">Select your Plan</h1>
+                    <p className="form-description">Please provide your name, email adress and phone number</p>
+                    <StepTwo/>
+                </div>
+                <button className="page-button">Next Step</button>
+            </div>
+        </div>
+    )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<Page/>)
