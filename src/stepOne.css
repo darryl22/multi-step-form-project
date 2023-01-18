@@ -2,11 +2,28 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    border: 2px solid black;
+}
+
+.form-input label{
+    color: hsl(213, 96%, 18%);
+    font-size: 0.8em;
 }
 
 .input-box{
     margin-top: 10px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 12px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 11%, 63%);
+}
+
+.input-box::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+
+.input-box:focus{
+    border: 1px solid hsl(213, 96%, 18%);
 }

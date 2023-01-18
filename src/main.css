@@ -51,6 +51,7 @@ body{
 
 .form-description{
     color: hsl(231, 11%, 63%);
+    margin-bottom: 40px;
 }
 
 .page-button{
@@ -65,4 +66,17 @@ body{
 
 .page-button:hover{
     background-color: hsl(243, 100%, 62%);
+}
+
+.page-back{
+    float: left;
+    align-self: flex-start;
+    border: none;
+    background-color: white;
+    color: hsl(231, 11%, 63%);
+    font-weight: bold;
+}
+
+.page-back:hover{
+    color: hsl(213, 96%, 18%);
 }

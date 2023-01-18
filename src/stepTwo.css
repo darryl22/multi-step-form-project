@@ -1,17 +1,26 @@
 .plan-container{
     display: flex;
+    width: 100%;
 }
 
 .plan{
     border: 1px solid hsl(229, 24%, 87%);
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
     flex: 1;
-    height: 170px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .plan:hover{
+    background-color: hsl(217, 100%, 97%);
     border: 1px solid hsl(243, 100%, 62%);
+}
+
+.plan img{
+    margin-bottom: 40px;
 }
 
 .plan-one{
@@ -20,4 +29,58 @@
 
 .plan-three{
     margin-left: 20px;
+}
+
+.first{
+    margin: 0;
+    padding: 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+}
+
+.second{
+    margin: 0;
+    padding: 0;
+    color: hsl(231, 11%, 63%);
+    margin-top: 5px;
+}
+
+.third{
+    margin: 0;
+    padding: 0;
+    color: hsl(213, 96%, 18%);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.month-year{
+    background-color: hsl(217, 100%, 97%);
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month-year p{
+    display: block;
+}
+
+.slider{
+    height: 16px;
+    width: 40px;
+    background-color: hsl(213, 96%, 18%);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-ball{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 3px
 }

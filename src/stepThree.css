@@ -1,0 +1,44 @@
+.add-on{
+    border: 1px solid hsl(213, 96%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+}
+
+.add-on input{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.add-on-title{
+    margin: 0;
+    padding: 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    font-weight: 0.9em;
+}
+
+.add-on-desc{
+    margin: 0;
+    padding: 0;
+    color: hsl(231, 11%, 63%);
+    font-size: 0.9em;
+}
+
+.price{
+    align-self: flex-end;
+    display: block;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: hsl(243, 100%, 62%);
+}
