@@ -34,13 +34,13 @@ function StepOne() {
             <p className="form-description">Please provide your name, email address and phone number.</p>
             <form className="form-input" onSubmit={handleSubmit}>
                 <label htmlFor="name">Name</label>
-                <input className="input-box" type="text" name="name" placeholder="e.g Stephen King" value={data.name} onChange={handleChange}/>
+                <input className="input-box" type="text" name="name" placeholder="e.g Stephen King" value={data.name} onChange={handleChange} required/>
 
                 <label htmlFor="email">Email Address</label>
-                <input className="input-box" type="email" name="email" placeholder="e.g stephenking@lorem.com" value={data.email} onChange={handleChange}/>
+                <input className="input-box" type="email" name="email" placeholder="e.g stephenking@lorem.com" value={data.email} onChange={handleChange} required/>
 
                 <label htmlFor="phone">Phone Number</label>
-                <input className="input-box" type="text" name="phone" placeholder="e.g +1 234 567 890" value={data.phone} onChange={handleChange}/>
+                <input className="input-box" type="text" name="phone" placeholder="e.g +1 234 567 890" value={data.phone} onChange={handleChange} required/>
             </form>
         </div>
     )

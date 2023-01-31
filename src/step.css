@@ -31,3 +31,9 @@
     color: white;
     letter-spacing: 1px;
 }
+
+@media (max-width: 375px) {
+    .step-title, .step-detail{
+        display: none;
+    }
+}

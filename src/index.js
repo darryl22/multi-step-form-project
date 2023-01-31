@@ -6,6 +6,7 @@ import StepOne from "./StepOne"
 import StepTwo from "./StepTwo"
 import StepThree from "./StepThree"
 import StepFour from "./StepFour"
+import Final from "./Final"
 
 export const priceContext = React.createContext()
 
@@ -21,7 +22,7 @@ function Page() {
     })
 
     function nextStep() {
-        if (stepNumber < 4) {
+        if (stepNumber < 5) {
             setStepNumber(prev => prev + 1)
         }
     }
@@ -57,6 +58,7 @@ function Page() {
                     number = {4}
                     step = "STEP 4"
                     title = "SUMMARY"
+                    stepno = {stepNumber}
                 />
             </div>
             <div className="form-content">
@@ -66,9 +68,10 @@ function Page() {
                         {stepNumber === 2 && <StepTwo/>}
                         {stepNumber === 3 && <StepThree/>}
                         {stepNumber === 4 && <StepFour/>}
+                        {stepNumber === 5 && <Final/>}
                     </priceContext.Provider>
                 </div>
-                <div>
+                <div className="buttons-container">
                     {stepNumber !== 1 && <button className="page-back" onClick={prevStep}>Go Back</button>}
                     <button className="page-button" onClick={nextStep}>{stepNumber < 4 ? "Next Step" : "Confirm"}</button>
                 </div>

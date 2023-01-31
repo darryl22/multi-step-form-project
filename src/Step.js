@@ -4,8 +4,8 @@ import "./step.css"
 function Step(props) {
 
     const stepStyle = {
-        backgroundColor: props.current === props.number ? "hsl(206, 94%, 87%)" : "transparent",
-        color: props.current === props.number ? "hsl(213, 96%, 18%)" : "white"
+        backgroundColor: props.current === props.number || props.stepno === 5 ? "hsl(206, 94%, 87%)" : "transparent",
+        color: props.current === props.number || props.stepno === 5 ? "hsl(213, 96%, 18%)" : "white"
     }
     return(
         <div className="step">

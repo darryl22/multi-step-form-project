@@ -46,7 +46,7 @@ function StepTwo() {
                     <div>
                         <p className="first">Arcade</p>
                         <p className="second">{slider ? "$9/mo" : "$90/yr"}</p>
-                        {slider && <p className="third">2 months free</p>}
+                        {!slider && <p className="third">2 months free</p>}
                     </div>
                 </div>
                 <div className="plan plan-two" onClick={() => handlePlan(12)} style={{backgroundColor: plan === 12 || plan === 120 ? "hsl(217, 100%, 97%)" : "white"}}>
@@ -54,7 +54,7 @@ function StepTwo() {
                     <div>
                         <p className="first">Advanced</p>
                         <p className="second">{slider ? "$12/mo" : "$120/yr"}</p>
-                        {slider && <p className="third">2 months free</p>}
+                        {!slider && <p className="third">2 months free</p>}
                     </div>
                 </div>
                 <div className="plan plan-three" onClick={() => handlePlan(15)} style={{backgroundColor: plan === 15 || plan === 150 ? "hsl(217, 100%, 97%)" : "white"}}>
@@ -62,7 +62,7 @@ function StepTwo() {
                     <div>
                         <p className="first">Pro</p>
                         <p className="second">{slider ? "$15/mo" : "$150/yr"}</p>
-                        {slider && <p className="third">2 months free</p>}
+                        {!slider && <p className="third">2 months free</p>}
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 .plan-container{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .plan{
@@ -23,13 +25,13 @@
     margin-bottom: 40px;
 }
 
-.plan-one{
+/* .plan-one{
     margin-right: 20px;
-}
+} */
 
-.plan-three{
+/* .plan-three{
     margin-left: 20px;
-}
+} */
 
 .first{
     margin: 0;
@@ -83,4 +85,20 @@
     background-color: white;
     border-radius: 100%;
     margin: 3px
+}
+
+@media (max-width: 375px) {
+    .plan-container{
+        flex-direction: column;
+    }
+
+    .plan{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .plan img{
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
 }
